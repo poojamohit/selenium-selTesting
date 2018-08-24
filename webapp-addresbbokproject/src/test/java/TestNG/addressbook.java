@@ -12,7 +12,7 @@ public class addressbook {
 	 WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		  driver = new ChromeDriver();
 		  driver.get("http://35.231.231.15:32768/addressbook/");
 		  driver.manage().window().maximize();
