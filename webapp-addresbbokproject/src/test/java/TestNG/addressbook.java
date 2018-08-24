@@ -14,7 +14,7 @@ public class addressbook {
 	public void launch() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		  driver = new ChromeDriver();
-		  driver.get("http://35.231.231.15:32768/addressbook/");
+		  driver.get("http://ec2-13-232-208-249.ap-south-1.compute.amazonaws.com:8080/addressbook");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
