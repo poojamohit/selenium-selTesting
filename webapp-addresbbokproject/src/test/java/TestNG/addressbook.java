@@ -20,7 +20,7 @@ public class addressbook {
                 chromeOptions.addArguments("--no-sandbox");
  
 		  driver = new ChromeDriver(chromeOptions);
-		  driver.get("http://ec2-13-232-208-249.ap-south-1.compute.amazonaws.com:8080/addressbook");
+		  driver.get("http://ec2-13-232-139-186.ap-south-1.compute.amazonaws.com:8080/addressbook");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
