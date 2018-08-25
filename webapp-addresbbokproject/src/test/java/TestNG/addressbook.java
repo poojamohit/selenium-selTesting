@@ -28,7 +28,19 @@ public class addressbook {
   public void addressbook() {
 	  
 	  driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
-	  driver.findElement(By.id("gwt-uid-5")).sendKeys("Edureka");
+	  driver.findElement(By.id("gwt-uid-5")).sendKeys("abc");
+	  driver.findElement(By.id("gwt-uid-7")).sendKeys("Selenium");
+	  driver.findElement(By.id("gwt-uid-9")).sendKeys("987654321");
+	  driver.findElement(By.id("gwt-uid-11")).sendKeys("devops@gmail.com");
+	  driver.findElement(By.id("gwt-uid-13")).sendKeys("06/06/2018");
+	  driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
+	 	  	  
+  }
+	@Test
+  public void addressbook() {
+	  
+	  driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
+	  driver.findElement(By.id("gwt-uid-5")).sendKeys("xyz");
 	  driver.findElement(By.id("gwt-uid-7")).sendKeys("Selenium");
 	  driver.findElement(By.id("gwt-uid-9")).sendKeys("987654321");
 	  driver.findElement(By.id("gwt-uid-11")).sendKeys("devops@gmail.com");
