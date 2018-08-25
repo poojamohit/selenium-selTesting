@@ -36,8 +36,8 @@ public class addressbook {
 	  driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
 	 	  	  
   }
-	@Test
-  public void addressbook() {
+  @Test
+  public void addressbook1() {
 	  
 	  driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
 	  driver.findElement(By.id("gwt-uid-5")).sendKeys("xyz");
