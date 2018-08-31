@@ -19,7 +19,7 @@ public class TestngParameters {
  
   public void test(String sUsername, String sPassword) {
  
-	  driver = new FirefoxDriver();
+	  driver = new ChromeDriver();
  
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
  
