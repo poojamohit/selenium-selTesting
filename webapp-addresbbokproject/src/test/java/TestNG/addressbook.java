@@ -19,24 +19,17 @@ public class TestngParameters {
  
   public void test(String sUsername, String sPassword) {
  
-	  driver = new ChromeDriver();
+       driver = new ChromeDriver();
  
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
- 
-      driver.get("http://localhost:3001");
- 
+      driver.get("http://ec2-54-172-142-110.compute-1.amazonaws.com:3001/");
       driver.findElement(By.xpath(".//*[@id='account']/a")).click();
- 
       driver.findElement(By.id("log")).sendKeys(sUsername);
- 
       driver.findElement(By.id("pwd")).sendKeys(sPassword);
- 
       driver.findElement(By.id("login")).click();
- 
       driver.findElement(By.xpath(".//*[@id='account_logout']/a")).click();
- 
       driver.quit();
- 
+
   }
  
 }
